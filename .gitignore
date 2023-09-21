@@ -1,0 +1,27 @@
+# Ignore system and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Ignore compiled code and build output
+/build/
+/dist/
+/node_modules/
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+
+# Ignore configuration files with sensitive data
+config.json
+secrets.json
+
+# Ignore specific file types
+*.pdf
+*.docx
+
+# Ignore backup files created by text editors
+*~
+# Project exclude paths
+/out/
