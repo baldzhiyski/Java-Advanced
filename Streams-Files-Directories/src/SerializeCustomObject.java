@@ -1,7 +1,4 @@
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 
 public class SerializeCustomObject {
     static  class Cube implements Serializable {
@@ -17,7 +14,7 @@ public class SerializeCustomObject {
             this.depth = depth;
         }
     }
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         Cube cube = new Cube("white", 15.7, 16.4, 12.5);
 
         FileOutputStream outputStream = new FileOutputStream("cube-data.ser");
@@ -26,5 +23,15 @@ public class SerializeCustomObject {
         objectOutputStream.writeObject(cube);
 
         objectOutputStream.close();
+
+        // we can also read :
+
+        FileInputStream inputStream = new FileInputStream("cube-data.ser");
+
+        ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
+
+        Cube cube2 = (Cube) objectInputStream.readObject();
+
+        System.out.println(cube2.color);
     }
 }
