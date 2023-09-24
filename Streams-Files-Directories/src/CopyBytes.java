@@ -17,9 +17,9 @@ public class CopyBytes {
             }else if(symbol==10){
                 outputStream.write('\n');
             }else {
-               String word = String.valueOf(oneByte);
-                for (int i = 0; i < word.length(); i++) {
-                    outputStream.write(word.charAt(i));
+               String digits = String.valueOf(oneByte);
+                for (int i = 0; i < digits.length(); i++) {
+                    outputStream.write(digits.charAt(i));
                 }
             }
             oneByte=inputStream.read();
