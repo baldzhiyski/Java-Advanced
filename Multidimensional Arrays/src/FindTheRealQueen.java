@@ -52,7 +52,7 @@ public class FindTheRealQueen {
             }
         }
         //up-right = row--; col++; third
-        for (int currentRow = row-1 , currentCol = col+11 ;currentRow >= 0 && currentCol<8; currentRow-- , currentCol++) {
+        for (int currentRow = row-1 , currentCol = col+1 ;currentRow >= 0 && currentCol<8; currentRow-- , currentCol++) {
             if(matrix[currentRow][currentCol]=='q'){
                 return false;
             }
