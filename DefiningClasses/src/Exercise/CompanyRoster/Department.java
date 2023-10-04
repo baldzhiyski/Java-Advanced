@@ -1,7 +1,6 @@
 package Exercise.CompanyRoster;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Department {
@@ -27,7 +26,7 @@ public class Department {
         return employees;
     }
     public void addEmployee(Employee employee) {
-        this.employees.add(employee);
+        getEmployees().add(employee);
     }
 
 }

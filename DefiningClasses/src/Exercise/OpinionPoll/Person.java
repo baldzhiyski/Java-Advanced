@@ -1,13 +1,13 @@
 package Exercise.OpinionPoll;
 
 public class Person {
+    private String name;
+    private int age;
     public Person(String name, int age) {
         setAge(age);
         setName(name);
     }
 
-    String name;
-    int age;
 
     public void setAge(int age) {
         this.age = age;

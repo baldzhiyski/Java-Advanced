@@ -13,7 +13,7 @@ public class Trainer {
         this.collectionOfPokemons = new ArrayList<>();
     }
     public void addToCollection(Pokemon pokemon){
-        collectionOfPokemons.add(pokemon);
+        getCollectionOfPokemons().add(pokemon);
     }
     public void increaseBadge(){
         numberOfBadges++;

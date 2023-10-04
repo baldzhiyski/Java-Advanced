@@ -19,8 +19,8 @@ public class Main {
             Person person = new Person(name,age);
             people.add(person);
         }
-        Comparator<Person> sort = (p1,p2)->p1.name.compareTo(p2.name);
-        Predicate<Person> filter = person->person.age>30;
+        Comparator<Person> sort = (p1,p2)->p1.getName().compareTo(p2.getName());
+        Predicate<Person> filter = person->person.getAge()>30;
         Consumer<Person> printer = person-> System.out.println(person.getName() + " - " + person.getAge());
 
         people.stream()
