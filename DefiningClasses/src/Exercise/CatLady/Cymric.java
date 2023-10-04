@@ -1,20 +1,9 @@
 package Exercise.CatLady;
 
 public class Cymric extends  Cat{
-
     private double furLength;
-    private String type = "Cymric";
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public Cymric(String name, double furLength) {
-        super(name);
+    public Cymric(String name,String type, double furLength) {
+        super(name,type);
         this.furLength=furLength;
     }
 
@@ -27,6 +16,6 @@ public class Cymric extends  Cat{
     }
     @Override
     public String toString() {
-        return String.format("Cymric %s %.2f%n", getName(), getFurLength());
+        return String.format("%s %.2f%n",super.toString(), getFurLength());
     }
 }

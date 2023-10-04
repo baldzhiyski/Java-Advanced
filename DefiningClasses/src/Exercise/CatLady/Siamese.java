@@ -1,11 +1,10 @@
 package Exercise.CatLady;
 
 public class Siamese extends Cat{
-    private String type = "Siamese";
     private double earSize;
 
-    public Siamese(String name, double earSize) {
-        super(name);
+    public Siamese(String name,String type, double earSize) {
+        super(name,type);
         this.earSize=earSize;
     }
 
@@ -16,16 +15,8 @@ public class Siamese extends Cat{
     public double getEarSize() {
         return earSize;
     }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
     @Override
     public String toString() {
-        return String.format("Siamese %s %.2f%n", getName(), getEarSize());
+        return String.format("%s %.2f%n",super.toString(), getEarSize());
     }
 }
