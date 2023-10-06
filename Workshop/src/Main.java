@@ -8,11 +8,11 @@ public class Main {
         smartArray.add(65);
         smartArray.add(67);
 
-        smartArray.forEach(System.out::println);
+
         smartArray.remove(3);
         smartArray.add(3,76);
         int num = smartArray.get(1);
-        System.out.println(num);
+
         System.out.println(smartArray.contains(23));
 
 
@@ -22,7 +22,7 @@ public class Main {
         stack.push(20);
         stack.push(23);
         stack.pop();
-        System.out.println();
-        stack.forEach(System.out::println);
+        System.out.println(stack.size());
+
     }
 }

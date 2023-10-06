@@ -31,9 +31,6 @@ public class CreatingZipArchive {
                 }
                 fileInputStream.close();
             }
-
-
-
         }catch (IOException e){
             e.printStackTrace();
         }
