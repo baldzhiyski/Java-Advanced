@@ -6,8 +6,8 @@ import java.util.function.Predicate;
 
 public class FilterByAge {
     public static class Person{
-        String name;
-        int age;
+        private String name;
+        private int age;
     }
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
