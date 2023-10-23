@@ -9,6 +9,8 @@ public class BinarySearch {
                 .toArray();
         int n = Integer.parseInt(scan.nextLine());
 
+        // finds the position of a target value within a sorted array
+
         int result = binarySearch(numbers, n);
 
         System.out.println(result);

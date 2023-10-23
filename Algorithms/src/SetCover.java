@@ -59,7 +59,6 @@ public class SetCover {
                     universeSet.removeIf(element->element==el);
                 }
             }
-
         }
         return selectedSets;
     }

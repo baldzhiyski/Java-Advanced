@@ -7,6 +7,11 @@ public class MergeSort {
         int[] numbers = Arrays.stream(scan.nextLine().split("\\s+"))
                 .mapToInt(Integer::parseInt)
                 .toArray();
+
+        // merge sort - recursively divide array in 2 , sort ,recombine
+        // run-time complexity - 0(n log n)
+        // space complexity = 0(n);
+
         int[] sorted = mergeSort(numbers);
         for (int num : sorted) {
             System.out.print(num + " ");
@@ -48,6 +53,8 @@ public class MergeSort {
                 secondPartitionIndex++;
             }
         }
+        // for the remaining elements (if there are any)
+
         while (firstPartitionIndex<halfIndex){
             array[mainIndex] = firstPortion[firstPartitionIndex];
 

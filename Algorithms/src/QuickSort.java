@@ -1,13 +1,20 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class QuickSort {
+public class   QuickSort {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int[] numbers = Arrays.stream(scan.nextLine().split("\\s+"))
                 .mapToInt(Integer::parseInt)
                 .toArray();
         quickSort(numbers,0,numbers.length-1);
+        // quick sort = moves smaller elements to left of a pivot.
+        // recursively divide array in 2 partitions
+
+        // run-time complexity - best case : (n log(n))
+        // Average case 0(n log(n))
+        // Worst case 0(n^2) if already sorted
+
         for (int num : numbers) {
             System.out.print(num + " ");
         }
