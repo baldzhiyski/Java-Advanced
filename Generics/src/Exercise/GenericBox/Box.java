@@ -3,7 +3,7 @@ package Exercise.GenericBox;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Box <T extends Comparable>{
+public class Box <T extends Comparable<T>>{
 
     private List<T> data;
 

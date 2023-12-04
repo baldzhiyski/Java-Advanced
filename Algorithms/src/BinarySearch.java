@@ -10,6 +10,7 @@ public class BinarySearch {
         int n = Integer.parseInt(scan.nextLine());
 
         // finds the position of a target value within a sorted array
+        // fantastic with large data sets
 
         int result = binarySearch(numbers, n);
 
@@ -22,9 +23,11 @@ public class BinarySearch {
 
         while (left <= right) {
             int mid = left + (right - left) / 2;
+            // we go left side
             if (arr[mid] > target) {
                 right = mid - 1;
             } else if(arr[mid]<target) {
+                // we go right side;
                 left = mid +1;
             }else{
                 return mid;

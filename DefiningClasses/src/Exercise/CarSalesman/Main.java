@@ -2,7 +2,7 @@ package Exercise.CarSalesman;
 
 import java.util.*;
 
-public class Main {
+public class  Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int numEngines = Integer.parseInt(scan.nextLine());
